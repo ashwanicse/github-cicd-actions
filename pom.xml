@@ -52,6 +52,8 @@
 				</configuration>
 			</plugin>
 		</plugins>
+		<!-- final jar name which will be used as dockerFilename-->
+		<finalName>github-cicd-actions</finalName>
 	</build>
 
 </project>
