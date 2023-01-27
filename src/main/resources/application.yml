@@ -1,0 +1,36 @@
+# Project information
+info:
+  app:
+    name: GCp test project
+    description: App to test GCP things
+    version: 1.0
+    
+# Server configuration
+server:
+  servlet:
+    context-path: '/app'
+  port: '8080'
+  
+# Service configuration
+app:
+  repo-settings:
+    enabled: true
+    project : 'dev-firestore-376016'
+    collection:
+      name: 'TEST_DB'
+  
+  
+# Actuator endpoint configuration
+management:
+  health:
+    defaults:
+      enabled: true
+  endpoints:
+    web:
+      exposure:
+        include: health,info,metrics,circuitbreaker,loggers
+  endpoint:
+    health:
+      show-details: always
+    loggers:
+      enabled: true
