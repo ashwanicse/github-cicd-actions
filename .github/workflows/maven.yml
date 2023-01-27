@@ -35,7 +35,7 @@ jobs:
       name: Build & push Docker image
       with:
         image: ashwanics90/github-cicd-actions
-        tags: latest
+        tags: 1.0.0.RELEASE
         registry: docker.io
         dockerfile: Dockerfile
         username: ${{ secrets.DOCKER_USERNAME }}
